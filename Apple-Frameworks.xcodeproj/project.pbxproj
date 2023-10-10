@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		83A992242AD5A1D30083321C /* Apple_FrameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A992232AD5A1D30083321C /* Apple_FrameworksApp.swift */; };
-		83A992262AD5A1D30083321C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A992252AD5A1D30083321C /* ContentView.swift */; };
 		83A992282AD5A1D50083321C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A992272AD5A1D50083321C /* Assets.xcassets */; };
 		83A9922B2AD5A1D50083321C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A9922A2AD5A1D50083321C /* Preview Assets.xcassets */; };
+		83A992322AD5A4220083321C /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A992312AD5A4220083321C /* Framework.swift */; };
+		83A992342AD5A6100083321C /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A992332AD5A6100083321C /* FrameworkGridView.swift */; };
+		83A992362AD5D0970083321C /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A992352AD5D0960083321C /* FrameworkDetailView.swift */; };
+		83A992382AD5D49F0083321C /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A992372AD5D49E0083321C /* AFButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		83A992202AD5A1D30083321C /* Apple-Frameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple-Frameworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A992232AD5A1D30083321C /* Apple_FrameworksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_FrameworksApp.swift; sourceTree = "<group>"; };
-		83A992252AD5A1D30083321C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		83A992272AD5A1D50083321C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83A9922A2AD5A1D50083321C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83A992312AD5A4220083321C /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		83A992332AD5A6100083321C /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		83A992352AD5D0960083321C /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		83A992372AD5D49E0083321C /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +58,12 @@
 			isa = PBXGroup;
 			children = (
 				83A992232AD5A1D30083321C /* Apple_FrameworksApp.swift */,
-				83A992252AD5A1D30083321C /* ContentView.swift */,
+				83A992332AD5A6100083321C /* FrameworkGridView.swift */,
+				83A992352AD5D0960083321C /* FrameworkDetailView.swift */,
+				83A992312AD5A4220083321C /* Framework.swift */,
 				83A992272AD5A1D50083321C /* Assets.xcassets */,
 				83A992292AD5A1D50083321C /* Preview Content */,
+				83A992372AD5D49E0083321C /* AFButton.swift */,
 			);
 			path = "Apple-Frameworks";
 			sourceTree = "<group>";
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83A992262AD5A1D30083321C /* ContentView.swift in Sources */,
+				83A992362AD5D0970083321C /* FrameworkDetailView.swift in Sources */,
+				83A992342AD5A6100083321C /* FrameworkGridView.swift in Sources */,
+				83A992322AD5A4220083321C /* Framework.swift in Sources */,
+				83A992382AD5D49F0083321C /* AFButton.swift in Sources */,
 				83A992242AD5A1D30083321C /* Apple_FrameworksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +292,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +322,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
