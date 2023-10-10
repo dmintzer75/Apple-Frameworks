@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FrameworkGridView: View {
-    @StateObject var viewModel = FrameworkGridViewModel()
+    @StateObject var viewModel = FrameworkViewModel()
 
     var body: some View {
         NavigationStack {

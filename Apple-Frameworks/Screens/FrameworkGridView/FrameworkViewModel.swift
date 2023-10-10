@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-final class FrameworkGridViewModel: ObservableObject {
+final class FrameworkViewModel: ObservableObject {
     var selectedFramework: Framework? {
         didSet {
             isShowingDetailView = true
